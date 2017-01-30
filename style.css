@@ -1,24 +1,67 @@
 .done-true {
-	text-decoration: line-through;
-	color:grey;
+    text-decoration: line-through;
+    color: grey;
 }
 
 .main {
-	width: 400px;
-	position: absolute;
-    top: 50%;
+    width: 400px;
+    position: absolute;
+    top: 25%;
     left: 50%;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: -200px;
-    
+    border: 1px solid #f1f1f1;
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.26);
 }
 
 .main h2 {
-	text-align: center;
-	background-color: #f1f1f1; 
-	padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
 }
 
-.main li{
-	 list-style-type: none;
+.main li {
+    list-style-type: none;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px;
+}
+
+.main li:last-child {
+    border-bottom: none;
+}
+
+.main ul {
+    padding-left: 0;
+}
+
+.trash {
+    float: right;
+    padding-right: 10px;
+    display: none;
+}
+
+li:hover .trash {
+    display: inline;
+}
+
+.error {
+    color: red;
+}
+
+.add-block {
+    background-color: #f1f1f1;
+    height: 100%;
+    padding: 15px 15px 7px 15px;
+}
+
+.add-block .btn {
+    border-radius: 0;
+    float: right;
+}
+
+.add-block input {
+    height: 100%;
+    padding: 7px;
+    width: 320px;
 }
